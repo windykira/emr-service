@@ -21,7 +21,8 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 //registry.addMapping("/api/**")
                 registry.addMapping("/**")
-                        .allowedOrigins("http://172.30.2.228:8081")
+                        //.allowedOrigins("http://192.168.0.104:8082")
+                        .allowedOrigins("*")
                         .allowedMethods("GET", "POST", "DELETE", "PUT")
                         .allowCredentials(false).maxAge(3600);
             }
