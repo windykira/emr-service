@@ -18,6 +18,7 @@ import java.util.Map;
  * Created by hp on 2018/7/18.
  */
 @Controller
+@RequestMapping("/api")
 public class LoginController {
 
 

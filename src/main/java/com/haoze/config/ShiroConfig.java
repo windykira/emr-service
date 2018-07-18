@@ -72,6 +72,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/files/**", "anon");
         filterChainDefinitionMap.put("/logout", "logout");
         filterChainDefinitionMap.put("/", "anon");
+        filterChainDefinitionMap.put("/api/login", "anon");
         filterChainDefinitionMap.put("/system/index/main", "anon");
         filterChainDefinitionMap.put("/main/open/**", "anon");
         filterChainDefinitionMap.put("/toLogin", "anon");
@@ -79,7 +80,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/emrsys/user/checkForDepartment", "anon");
         filterChainDefinitionMap.put("/emrsys/dept/choose", "anon");
 
-        filterChainDefinitionMap.put("/api/demo/list", "anon");
+        //filterChainDefinitionMap.put("/api/demo/list", "anon");
 
         filterChainDefinitionMap.put("/**", "authc");
         //filterChainDefinitionMap.put("/**", "kickoff,authc");
