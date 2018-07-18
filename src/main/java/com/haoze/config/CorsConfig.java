@@ -24,6 +24,7 @@ public class CorsConfig {
                         //.allowedOrigins("http://192.168.0.104:8082")
                         .allowedOrigins("*")
                         .allowedMethods("GET", "POST", "DELETE", "PUT")
+                        .allowedHeaders("Authorization","Accept","Origin","Content-Type")
                         .allowCredentials(false).maxAge(3600);
             }
         };
